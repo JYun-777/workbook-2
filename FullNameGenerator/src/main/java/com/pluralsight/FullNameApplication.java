@@ -15,15 +15,15 @@ public class FullNameApplication {
         firstName = read.nextLine();
         firstName.trim();
 
-        System.out.println("Enter middle name (press enter if not applicable): ");
-        middleName = read.nextLine();
-        middleName.trim();
-
-        System.out.println("Enter last name: ");
+        System.out.print("Enter last name: ");
         lastName = read.nextLine();
         lastName.trim();
 
-        System.out.println("Enter suffix (press enter if not applicable): ");
+        System.out.print("Enter middle name (press enter if not applicable): ");
+        middleName = read.nextLine();
+        middleName.trim();
+
+        System.out.print("Enter suffix (press enter if not applicable): ");
         suffix = read.nextLine();
         suffix.trim();
 
@@ -33,6 +33,6 @@ public class FullNameApplication {
         fullName += lastName + " ";
         if(!suffix.isEmpty()) fullName += ", " + suffix;
 
-        System.out.println(fullName);
+        System.out.println("Full Name: " + fullName);
     }
 }
