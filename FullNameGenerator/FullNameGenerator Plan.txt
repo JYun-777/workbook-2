@@ -1,1 +1,21 @@
 Full Name Generator
+
+Variables
+
+firstName
+lastName
+
+(optional)
+middleName
+suffix
+
+Trim any leading or trailing spaces
+
+prompt firstName
+
+prompt lastName
+
+prompt middleName
+
+prompt suffix
+

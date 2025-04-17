@@ -28,6 +28,9 @@ public class FullNameParser {
             lastName = names[1];
         }
 
+        System.out.println(StringHelper.grabFirstWord(fullName));
+        System.out.println(StringHelper.grabLastWord(fullName));
+
         System.out.printf("First Name: %s\nMiddle Name: %s\nLast Name: %s", firstName, middleName, lastName);
 
     }
