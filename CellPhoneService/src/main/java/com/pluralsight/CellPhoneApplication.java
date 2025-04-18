@@ -9,7 +9,11 @@ public class CellPhoneApplication {
 
         CellPhone cellPhone1 = new CellPhone();
         CellPhone cellPhone2 = new CellPhone();
+        CellPhone cellPhone3 = new CellPhone(12345,"Samsung Active","AT&T", "Jonathan", "510-234-0958");
+
         cellPhone2.setPhoneNumber("555-555-5555");
+
+
 
         System.out.println();
         cellPhone1.setSerialNumber(Prompter.enterLong(read,"Enter serial number: "));
@@ -20,9 +24,11 @@ public class CellPhoneApplication {
 
         display(cellPhone1);
         display(cellPhone2);
+        display(cellPhone3);
 
         cellPhone1.dial(cellPhone2.getPhoneNumber());
         cellPhone2.dial(cellPhone1.getPhoneNumber());
+        cellPhone3.dial(cellPhone2.getPhoneNumber());
     }
 
     public static void display(CellPhone phone){
