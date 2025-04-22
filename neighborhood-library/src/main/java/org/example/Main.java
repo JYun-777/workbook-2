@@ -20,7 +20,8 @@ public class Main {
     }
 
     public static void mainMenu() throws InterruptedException {
-        while (true) {
+        while (true)
+        {
             System.out.println("Welcome to the library!\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Thread.sleep(1000);
 
@@ -29,7 +30,8 @@ public class Main {
             int menuOption = read.nextInt();
             read.nextLine();
 
-            switch (menuOption) {
+            switch (menuOption)
+            {
                 case 1:
                     showAvailable();
                     break;
@@ -56,11 +58,11 @@ public class Main {
             book.displayBookDetails();
         }
 
-        System.out.println("Enter C to select a book to check out, or X to return to main menu.");
+        System.out.print("Enter C to select a book to check out, or X to return to main menu.\n>>");
         String menuOption = read.nextLine();
         switch (menuOption) {
             case "C":
-                System.out.println("Please enter the name of the book you would like to check out.");
+                System.out.println("\nPlease enter the name of the book you would like to check out.");
                 System.out.print(">>");
                 String bookSelection = read.nextLine();
                 for (Book book : books) {
